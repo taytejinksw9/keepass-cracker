@@ -1,0 +1,15 @@
+[package]
+name = "keepass-cracker"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "3.0", features = ["derive"] }
+rpassword = "5.0"
+aes = "0.7"
+block-modes = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+opt-level = 3
